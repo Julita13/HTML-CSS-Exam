@@ -1,0 +1,388 @@
+/* Mobile First design */
+
+:root {
+    --main-text-color: #999999; 
+    --main-heading-color: black;
+    --announcement-color: #FF3998;
+    --secondary-text-color: #555555;
+    --main-bg-color: white;
+    --secondary-background-color: #eee;
+    --main-underline-color: #2b2a2a;
+    --special-color: #FF8139; 
+    --special-heading-color: #777777; 
+    }
+    
+    body {
+        font-family: 'Inter', sans-serif;
+        margin: 0 2rem;
+        justify-content: center;
+    }
+    
+    header { 
+        margin: 3rem 0.2rem 3rem 0.2rem;
+    }
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navigation-items {
+        display: none;
+    }
+    
+    /* turiu suvokimą, kad čia turėtų būti hamburger tipo išskleidžiamas meniu, bet kadangi Java dar nesimokėm, šį karta pasitenkinau tiesiog ikonėlė :) */
+    .hamburger-menu i {
+        color: var(--main-text-color);
+        font-size: 2rem;
+        margin-top: 0.2rem;
+    }
+    
+    .NFT-announcement {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    
+    .opening-paragraph {
+        font-size: 1rem;
+        font-weight: bolder;
+        color: var(--announcement-color);
+        letter-spacing: 0.1rem;
+    }
+    
+    .launching-soon {
+        width: 50vw;
+    }
+    
+    .pink-text {
+        color: var(--announcement-color);
+    }
+    
+    .launching-soon h1 {
+        font-size: 3rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .grey-text {
+        color: var(--secondary-text-color);
+        font-size: 1.3rem;
+    }
+    
+    /* minusiniai margin'ai - I know, not a very cool idea. Bet kitaip šičia neišgalvojau, kaip padaryti :) */
+    .pink-creature {
+        position: absolute;
+        margin-left: 55%;
+        margin-top: -4rem;
+    }
+    
+    .pink-robot {
+        width: 420px;
+        height: auto;
+    }
+    
+    .colored-button {
+        width: 11rem;
+        height: 4rem;
+        border-radius: 40px;
+        margin-top: 1rem;
+        border: solid 3px transparent;
+        background-image: linear-gradient(var(--main-bg-color), var(--main-bg-color)), linear-gradient(to right, pink, red, darkorange, orange);
+        background-color: var(--main-bg-color);
+        background-color: border-box;
+        background-clip: content-box, border-box;
+    }
+    
+    .colored-button a {
+        color: var(--main-heading-color);
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .colored-section {
+        background-image: url(assets/background.svg);
+        background-size: cover;
+        padding: 6rem 2rem 3rem 3rem;
+        margin: 5rem -2rem 2rem -3rem;
+    }
+    
+    .colored-section h1 {
+        font-size: 3rem;
+    }
+    
+    .colored-section p {
+        font-size: 1.3rem;
+    }
+    
+    .first-grid-container {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        margin: 4rem auto;
+        text-align: left;
+    }
+    
+    .grid-item-1, .grid-item-3 {
+        text-align: left;
+    }
+    
+    .boomerang-logo {
+        width: 155px;
+        height: 47px;
+        object-fit: cover;
+        object-position: 1% 100%;
+    }
+    
+    .grid-item-4 {
+        display: none;
+    }
+    
+    .auction-offer h1 {
+        font-size: 3rem;
+    }
+    
+    .underlined-text {
+        text-decoration: underline;
+        color: var(--main-underline-color)
+    }
+    
+    .flex-container {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+    }
+    
+    .item-for-sale {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--secondary-background-color);
+        padding: 1rem;
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    
+    .rare-auction-item {
+        margin-right: 2rem;
+    }
+    
+    .golden-text {
+        color: var(--special-color);
+        font-size: 1rem;
+    }
+    
+    .right-aligned {
+        text-align: right;
+    }
+    
+    .right-aligned p:first-child {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .right-aligned p:last-child {
+        font-size: 1.3rem;
+    }
+    
+    .right-aligned h3 {
+        margin-top: -0.1rem;
+    }
+    
+    .special-symbol::before {
+        content:url('assets/eth.svg');
+        margin-right: 0.5rem;
+    }
+    
+    .second-grid-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        border-top: 2px solid var(--secondary-background-color);
+        border-bottom: 2px solid var(--secondary-background-color);
+        margin: 3rem auto;
+    }
+    
+    .second-flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .green-woman {
+        margin-top: 7rem;
+        height: 24rem;
+        margin-bottom: -3.3rem;
+    }
+    
+    .bottom-lined {
+        border-bottom: 2px solid var(--secondary-background-color);
+    }
+    
+    .horizontal-align {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .horizontal-align a {
+        color: var(--secondary-text-color);
+        text-decoration: none;
+    }
+    
+    .useful-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .dark-heading {
+        color: var(--special-heading-color);
+        padding: 0.3rem 0;
+        font-size: 1.3rem;
+    }
+    
+    .horizontal-align a:first-child {
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .horizontal-align a {
+        font-size: 1.3rem;
+        padding-top: 0.8rem;
+    }
+    
+    .social-icons {
+        margin-bottom: 4rem;
+    }
+    
+    .social-icons i {
+        color: var(--main-text-color);
+        margin-right: 1rem;
+        font-size: 1.3rem;
+    }
+    
+    .social-icons i:hover, .navigation-items a:hover, .horizontal-align a:hover, .hamburger-menu i:hover, .underlined-text:hover {
+        cursor: pointer;
+        color: var(--special-color);
+    }
+    
+    footer {
+        padding-bottom: 5rem;
+        padding-top: 2rem;
+        font-size: 1.3rem;
+    }
+    
+    footer p {
+        color: var(--main-text-color);
+    }
+    
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .invisible-footer {
+        display: none;
+    }
+    
+    /* Desktop version */
+    @media screen and (min-width: 992px){
+    
+        .navigation-items {
+            display: block;
+            font-size: 1.5rem;
+        }
+       
+        .pink-robot {
+            width: 600px;
+        }
+    
+        .hamburger-menu {
+            display: none;
+        }
+    
+        nav a {
+            text-decoration: none;
+            color: var(--secondary-text-color);
+            margin: 0.5rem;
+        }
+    
+        .launching-soon h1 {
+            font-size: 5rem;
+        }
+    
+        .colored-section {
+            padding: 6rem 2rem 3rem 3rem;
+            margin: 10rem 1rem 2rem auto;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    
+        .first-grid-container {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            margin: 7rem auto;
+            justify-content: center;
+        }
+        
+        .boomerang-logo {
+            width: auto;
+            margin-right: 3rem;
+        }
+        
+        .useful-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    
+        .last-flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 4rem;
+        }
+    
+        .grid-item-4 {
+            display: block;
+        }
+    
+        .auction-offer {
+            margin: 0 auto;
+        }
+    
+        .showcase:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    
+        .bottom-lined {
+            border-bottom: none;
+        }
+       
+        .second-grid-container {
+            padding-bottom: 7rem;
+        }
+    
+        .green-woman {
+            margin-top: 2rem;
+            height: 35rem;
+            margin-bottom: -7.4rem;
+        }
+        
+        .useful-info div {
+            margin-right: 3rem;
+        } 
+    
+        .useful-info {
+            margin-top: -1.5rem;
+        }
+    
+        footer {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+        }
+    
+        .invisible-footer {
+            display: block;
+        }
+    }
